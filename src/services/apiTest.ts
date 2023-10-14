@@ -1,4 +1,5 @@
 import axios from "axios";
+import CheckPrimeRequest from "../model/checkPrimeRequest";
 
 const api = axios.create({
     baseURL: "http://localhost:9099",
