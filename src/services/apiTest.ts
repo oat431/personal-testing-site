@@ -2,7 +2,7 @@ import axios from "axios";
 import CheckPrimeRequest from "../model/checkPrimeRequest";
 
 const api = axios.create({
-    baseURL: "http://localhost:9099",
+    baseURL: "http://localhost:8085/api/v1/playground",
 });
 
 const apiTest = {
