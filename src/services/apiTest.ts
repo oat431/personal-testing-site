@@ -1,22 +1,18 @@
-import axios from "axios";
 import CheckPrimeRequest from "../model/checkPrimeRequest";
-
-const api = axios.create({
-    baseURL: "http://localhost:8085/api/v1/playground",
-});
+import api from "./apiClient"
 
 const apiTest = {
     ping() {
-        return api.get("/ping");
+        return api.get("/playground/ping");
     },
     greet(name: string) {
-        return api.get(`/greeting?name=${name}`);
+        return api.get(`/playground/greeting?name=${name}`);
     },
     first1kprime() {
-        return api.get("/first-1000-primes");
+        return api.get("/playground/first-1000-primes");
     },
     checkPrime(check: CheckPrimeRequest) {
-        return api.post(`/check-prime`, check);
+        return api.post(`/playground/check-prime`, check);
     }
 
 };
