@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/TestAPI.vue'
+// import TestingSite from './components/TestAPI.vue'
+import TestingSite2 from './components/TestAPIV2.vue'
 </script>
 
 <template>
-  <HelloWorld msg="Dynamic Cors Test site" />
+  <!-- <TestingSite msg="Dynamic Cors Test site" /> -->
+  <TestingSite2 msg="Test New Framework" />
 </template>
 
 <style scoped>
